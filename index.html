@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <span class="navbar-1">
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container-fluid navbar_content">
+                    <a class="navbar-brand" href="#">
+                        <div class="dell-logo"><img src="./boot-image/Dell-Logo-Transparent-Background.png" alt="" height="25px"
+                                class="ps-4 mt-2 logo-1">
+                            <i class="fa-regular fa-user user-icon d-sm-none"></i>
+                            <i class='bx bx-cart cart-icon d-sm-none'></i>
+                        </div>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <form class="ms-5 " role="search">
+                            <div class="input-group">
+                                <input class="form-control search" type="text" placeholder="Search" aria-label="Search">
+                                <span class="input-group-text search-icon"><i class="fa-solid fa-magnifying-glass"></i>
+                                </span>
+                            </div>
+                        </form>
+
+
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+
+                                <div class="nav-link me-4 sign_in d-none d-md-block" aria-current="page" href="#"><i
+                                        class="fa-regular fa-user"></i>Sign in
+                                    <div class="nav_dropdown">
+                                        <P>WELCOME TO DELL</P>
+                                        <span>My Account</span>
+                                        <ul>
+                                            <li>Place orders quickly and easily</li>
+                                            <li>View&nbsp;orders&nbsp;and&nbsp;track&nbsp;yourshipping&nbsp;status</li>
+                                            <li>Create and access a list of your products</li>
+                                        </ul>
+                                        <a class="nav_dropdown_button sign-button"
+                                            href="https://www.dell.com/di/idp/dwa/authorize?response_type=id_token&client_id=657d850a-459b-4b56-ab6d-361e7181b981&redirect_uri=https%3a%2f%2fwww.dell.com%2fdci%2ffp%2fdi%2fv3%2ffp%2fsession%2fauthorize%3fclient_id%3dd1efae3b-bac8-4739-bfd9-37df5c3b2c01%26c%3din%26l%3den%26redirect_uri%3dhttps%253a%252f%252fwww.dell.com%252fen-in%26ContextId%3d40c61d76665040ffb5982c57e01184e3&tag=cid=d1efae3b-bac8-4739-bfd9-37df5c3b2c01&state=fp&scope=openid&code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM&code_challenge_method=S256&nonce=6fd5669a-c472-4dd9-aa36-5c9d23b25a97&contextid=40c61d76665040ffb5982c57e01184e3&c=in&l=en">Sign
+                                            In</a>
+                                        <a class="nav_dropdown_button sign-button-1"
+                                            href="https://www.dell.com/en-in/lp/contact-us">Create an Account</a>
+
+                                        <a
+                                            href="https://www.dell.com/di/idp/dwa/authorize?response_type=id_token&client_id=657d850a-459b-4b56-ab6d-361e7181b981&redirect_uri=https%3a%2f%2fwww.dell.com%2fdci%2ffp%2fsession%2fauthorize%3fclient_id%3d45f15b67-076c-434d-a0e0-446c17d7ba7e%26redirect_uri%3dhttps%253a%252f%252fwww.dell.com%252fpremier%252fhome%26ReasonCode%3dUnAuthorized%26ContextId%3d6d0b5666d0f6408f9585c3cbaaded5c9&tag=cid=45f15b67-076c-434d-a0e0-446c17d7ba7e&state=fp&scope=openid&code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM&code_challenge_method=S256&nonce=327c9632-44b6-4c4b-b1ac-1fab601383d6&contextid=6d0b5666d0f6408f9585c3cbaaded5c9"><button
+                                                class="nav_dropdown_button sign-button-1"
+                                                href="https://www.dell.com/di/idp/dwa/authorize?response_type=id_token&client_id=657d850a-459b-4b56-ab6d-361e7181b981&redirect_uri=https%3a%2f%2fwww.dell.com%2fdci%2ffp%2fsession%2fauthorize%3fclient_id%3d45f15b67-076c-434d-a0e0-446c17d7ba7e%26redirect_uri%3dhttps%253a%252f%252fwww.dell.com%252fpremier%252fhome%26ReasonCode%3dUnAuthorized%26ContextId%3d83f1bfddec4c42d5b0f9dea5db1c3108&tag=cid=45f15b67-076c-434d-a0e0-446c17d7ba7e&state=fp&scope=openid&code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM&code_challenge_method=S256&nonce=1a2ffb15-111a-4ffc-8ade-3caff3d0efe1&contextid=83f1bfddec4c42d5b0f9dea5db1c3108">Premier
+                                                Sign In</button></a>
+
+                                        <a
+                                            href="https://www.dell.com/di/idp/dwa/authorize?response_type=id_token&client_id=657d850a-459b-4b56-ab6d-361e7181b981&redirect_uri=https%3a%2f%2fwww.dell.com%2fdci%2ffp%2foidc%2fauthorize%3fc%3din%26l%3den%26response_type%3dcode%26client_id%3d3b82ae42-21a1-4046-b932-c0aaf7fb0bec%26scope%3dopenid%2bprofile%2bemail%2bpartner%2badprofile%2bdellprofile%26state%3d1RtPf2w9QbMXDcP56MsNgmBT7oTK_wUsPTz_mVaswps%253d%26redirect_uri%3dhttps%253a%252f%252fwww.delltechnologies.com%252foaks%252flogin%252foauth2%252fcode%252fpartners%26nonce%3dqzeaNesE-1aE1lmuKD5wRgaP9iEev92Ir5ZdTw06Gmg%26code_challenge%3ddo1Vpc3w4XYmFTf43jnwVkGpuo5ANteCzZPBG0i628M%26code_challenge_method%3dS256%26ContextId%3d1050c64484b24caba984a7ab6e2966fb&tag=cid=3b82ae42-21a1-4046-b932-c0aaf7fb0bec&state=fp&scope=openid&code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM&code_challenge_method=S256&nonce=3726ae2f-5956-4160-958f-2bce6f5ed9dd&contextid=1050c64484b24caba984a7ab6e2966fb&c=in&l=en"><button
+                                                class="nav_dropdown_button sign-button-1">Partner Program Sign
+                                                In</button></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link me-5" href="#"><i class="fa-solid fa-headphones opacity-75 me-2"></i>Contact
+                            us</a>
+                    </li>
+                    <li class="nav-item dropdown me-5 d-none d-md-block">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-globe opacity-75 me-2"></i>IN/EN
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link me-5 cart-1"><i class="fa-solid fa-cart-shopping me-2 opacity-75"></i>Cart
+                            <div class="nav_dropdown-2">
+                                <h6>Your Dell.Com Carts</h6>
+                                <p>Your cart is Empty</p>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+            </nav>
+        </span>
+
+        <div class="container d-md-none">
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-text">search</span>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-whit d-none d-md-block">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ps-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Artificial intelligence</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-3  ps-4" href="#">IT infrastrucure <i
+                                    class="fa-solid fa-chevron-down down-icon font-color"></i>
+                                <div class="nav_dropdown-3">
+                                    <p>Dell APEX multicloud and aaS</p>
+                                    <p>Products<i class='bx bx-chevron-right slash-1'></i></p>
+                                    <p>Workloads<i class='bx bx-chevron-right slash-1'></i></p>
+                                    <p>industry<i class='bx bx-chevron-right slash-1'></i></p>
+                                    <p>Payment Solutions</p>
+                                    <p>Developers and devOps</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-4 hover-4" href="#">Computer and Accessories <i
+                                    class="fa-solid fa-chevron-down down-icon font-color"></i>
+                                <div class="nav_dropdown-4">
+                                    <p>Laptops<i class='bx bx-chevron-right slash-2'></i></p>
+                                    <p>Desktops & all-in-ones<i class='bx bx-chevron-right slash-2'></i></p>
+                                    <p>Monitors<i class='bx bx-chevron-right slash-2'></i></p>
+                                    <p>Gaming<i class='bx bx-chevron-right slash-2'></i></p>
+                                    <p>PC Accessories<i class='bx bx-chevron-right slash-2'></i></p>
+                                    <p>Parts,batteries & Upgrades<i class='bx bx-chevron-right slash-2'></i></p>
+                                    <p>Thin cliens<i class='bx bx-chevron-right slash-2'></i></p>
+                                    <p>Workstations</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-4 hover-5" href="#">Services <i
+                                    class="fa-solid fa-chevron-down down-icon font-color"></i>
+                                <div class="nav_dropdown-5">
+                                    <p>View all servicecs</p>
+                                    <p>Professional services<i class='bx bx-chevron-right slash-2'></i></p>
+                                    <p>Lifecycle Services<i class='bx bx-chevron-right slash-2'></i></p>
+                                    <p>Training & Certification</i></p>
+                                    <p>Technology & tools</p>
+                                    <p>Premier:E-procurement & indegrations</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-4 hover-6" href="#">Support <i
+                                    class="fa-solid fa-chevron-down down-icon font-color"></i>
+                                <div class="nav_dropdown-6">
+                                    <p>Support Home</p>
+                                    <p>Support Library</p>
+                                    <p>Supprt Videos</p>
+                                    <p>Support Services & Warranty</p>
+                                    <p>Drivers & Downloads</p>
+                                    <p>Manuals & Documentation</p>
+                                    <p>PC diagnostics</p>
+                                    <p>Self-repair & parts</p>
+                                    <p>Service Requests & Dispatch status</p>
+                                    <p>Order Support</p>
+                                    <p>Contact Technical Support</p>
+                                    <p>Community</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-4 hover-7" href="#">Deals <i
+                                    class="fa-solid fa-chevron-down down-icon font-color"></i>
+                                <div class="nav_dropdown-7">
+                                    <p>View All Deals</p>
+                                    <p>Laptop Deals</p>
+                                    <p>Desktop Deals</p>
+                                    <p>Gaming PC deals</p>
+                                    <p>Business Deals</p>
+                                    <p>Monitor Deals</p>
+                                    <p>Computer Accessories Deals</p>
+                                    <p>Dell price Match</p>
+                                    <p>Member Discounts</p>
+                                    <p>Dell Rewards</p>
+                                    <p>Laptop Buying Deals</p>
+                                    <p>Server Advisor</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-4" href="#">Find a store</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./boot-image/laptop.jpeg" class="d-block w-100 courasel-img" alt="...">
+                    <div class="carousel-content">
+                        <div class="content-2-ces">
+                            <h5 class="front-1">CES 2025 INNOVATION AWARADS</h5>
+                            <h1 class="front-2-courasel">Introducing Our 2025 Honorees</h1>
+                            <h5 class="front-3">An ultra-quiet laptop with exceptional battery life and powerful on
+                                device-AI</h5>
+                            <div class="button-name">
+                                <button class="button2">shop now</button>
+                                <button class="button-11">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./boot-image/img2.jpg" class="d-block w-100 courasel-img-2" alt="...">
+                    <div class="carousel-content">
+                        <div class="content-2">
+                            <h5 class="front-1">AI SERVICES</h5>
+                            <h1 class="front-2">Drive value Across the AI Lifecycle</h1>
+
+                            <h5 class="front-3">Enhance Productivity with expertise to Accelerate AI use cases.</h5>
+                            <div class="button-name">
+                                <button class="button2">Explore</button>
+                                <button class="button-12">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./boot-image/courasel img.jpg" class="d-block w-100 courasel-img-2" alt="...">
+                    <div class="carousel-content">
+                        <div class="content-2-ces green">
+                            <h5 class="front-1">SPACE-SAVING TECH</h5>
+                            <h1 class="front-2-courasel-3">Stylish Design.Powerful Performance.</h1>
+
+                            <h5 class="front-3">Declutter Your desk and to-do list with Dell All-in-one desktops.</h5>
+                            <div class="button-name">
+                                <button class="button2">shop now</button>
+                                <button class="button-13">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="image_box">
+            <div class="footer-2">
+                <div class="container-fluid">
+                    <div class="row media-1">
+
+                        <div class="col-6 col-md-3 cart-1-lab">
+                            <div class="image_content-1">
+                                <img class="img1" src="./boot-image/card5" height="250px" width="300px">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 cart-2-cpu">
+                            <div class="image_content-2">
+                                <img class="img2" src="./boot-image/card6" height="250px" width="300px">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 cart-3-moni">
+                            <div class="image_content-3">
+                                <img class="img3" src="./boot-image/card7" height="250px" width="300px">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3 cart-4-cam">
+                            <div class="image_content-4">
+                                <img class="img4" src="./boot-image/card8" height="250px" width="300px">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 cart-5-ai">
+                            <div class="image_content-5">
+                                <img class="img5" src="./boot-image/card1" height="250px" width="300px">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 card-6-server">
+                            <div class="image_content-6">
+                                <img class="img6" src="./boot-image/card" height="250px" width="300px">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 card-7-data">
+                            <div class="image_content-7">
+                                <img class="img7" src="./boot-image/card3" height="250px" width="300px">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 cart-4 card-8-tab">
+                            <div class="image_content-8">
+                                <img class="img8" src="./boot-image/card4" height="250px" width="300px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="travel">
+            <video autoplay muted loop class="bg-video">
+                <source src="./project.video/7100894-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+            </video>
+
+            <div class="background-content">
+                <h6 class="kmm-style">KMM SUCCESS CUSTOMER STORY</h6>
+                <h1 class="pt-3 h-1">Unleasing Creativity With AI in filmaking</h1>
+                <p class="mt-4 p-1">KMM is revolutionizing the film industry by using advanced technology to explore
+                    and<br>
+                    excute ideas freely and effciently,accelerating creative outcomes.</p>
+                <button class="button-3"><i class="fa-regular fa-circle-play pe-3"></i>Play Video</button>
+
+                <div class="anchor-1-2">
+                    <a href="" class="text-light text-decoration-none">Discover How<i
+                            class="fa-solid fa-arrow-right ps-2 me-5"></i></a>
+
+                    <a href="" class="anchor-5 text-light text-decoration-none">View All Stories<i
+                            class="fa-solid fa-arrow-right ps-2"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section-3 border-0">
+            <div class="container card-1-section">
+                <div class="row">
+                    <div class="col text-light">
+                        <h4 class="h-4">Dell Support</h4>
+                        <h1 class="mt-3 were-h1">We're Here to Help</h1>
+                        <h5 class="h5-container mt-3">From offerring expert advice to solving complex problems,we've got
+                            you
+                            covered</h5>
+
+                    </div>
+                    <div class="card-2-section col text-light text-center pt-2 d-none d-md-block">
+                        <h1 class="we-h1">We detected your device</h1>
+                        <h3 class="">Inspiron 15 3520</h3>
+                        <h6 class="mt-4 pe-5">Service Tag: 42CDJY3</h6>
+                        <h6 class="ms-5 mt-4">Express service Code: 8848849467</h6>
+                        <button class="button-5 mt-3">Explore product support</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="card_content">
+                            <div class="card_all d-flex flex-md-column">
+                                <i class="fa-solid icon-1 fa-house"></i>
+                                <span class="home-1">Support&nbsp;Home</span>
+                            </div>
+                            <div class="card_all-1 d-flex flex-md-column">
+                                <i class="fa-solid icon-2 fa-gear"></i>
+                                <span class="home-2">Drivers&nbsp;downloads</span>
+                            </div>
+                            <div class="card_all-2 d-flex flex-md-column">
+                                <i class="fa-solid icon-3 fa-house"></i>
+                                <span class="home-3">order&nbsp;support</span>
+                            </div>
+                            <div class="card_all-3 d-flex flex-md-column">
+                                <i class="fa-regular icon-4 fa-circle-check"></i>
+                                <span class="home-4">warranty&nbsp;</span>
+                            </div>
+                            <div class="card_all-4 d-flex flex-md-column">
+                                <i class="fa-solid icon-5 fa-headset"></i>
+                                <span class="home-5">parts&nbsp;and upgrade</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid section-4">
+            <div class="row">
+                <div class="col-12 col-md-6 ">
+                    <div class="btn login-button">
+                        <div class="text-light">
+                            <h2 class="mt-3">My Account</h2>
+                            <h6 class="mt-3">My Account is an easy,more centralised way to manage your tech.</h6>
+                        </div>
+
+                        <div class="mt-4">
+                            <button class="button-6">Sign in</button>
+                            <button class="button-7 border text-light ms-3">Create Account</button>
+                        </div>
+                        <div class="text-light d-flex justify-content-evenly mt-4">
+                            <div>
+                                <i class="fa-regular fa-star star-1"></i>
+                                <h5 class="mt-3 h-6">Easy Order</h5>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-user star-1"></i>
+                                <h5 class="mt-3 h-6">Order Tracking</h5>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-user star-1"></i>
+                                <h5 class="mt-3 h-6">Profile Setting</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <div class="img-dell">
+                        <img src="./boot-image/man-laptop.jpg" alt="" class="img-fluid dell-image">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid section-12 mt-4 ">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="img-dell-2">
+                            <img src="./boot-image/dell-3.jpg" alt="" class="img-2">
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="btn-1">
+                            <div class="login-button-2">
+                                <div class="text-light ">
+                                    <h2 class="dell-1">Dell Premier</h2>
+                                    <h6 class="mt-3 dell-2">Leverage hands-on IT purchasing for your business with
+                                        personalised
+                                        product
+                                        selection and easy ordering via our customisable online platform.
+                                    </h6>
+                                </div>
+
+                                <div class="mt-4 sign-button-2">
+                                    <button class="button-9">Sign in<i
+                                            class="fa-solid fa-arrow-right ms-2"></i></button>
+                                    <button class="button-8 border text-light ms-3">Learnt about dell premier</button>
+                                </div>
+                                <div class="text-light d-flex justify-content-evenly mt-5">
+                                    <div>
+                                        <i class='bx bx-cart icon-10'></i>
+                                        <h6 class="mt-3 h-7">Simplify Purchasing</h6>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-chart-line icon-10"></i>
+                                        <h6 class="mt-3 h-7">Discover insights</h6>
+                                    </div>
+                                    <div>
+                                        <i class='bx bxs-check-shield icon-10'></i>
+                                        <h6 class="mt-3 h-7">Shop Securely</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="travel-2">
+            <div class="bg-video-2">
+                <video autoplay muted loop>
+                    <source src="./project.video/3254066-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="background-content-1">
+                <h6 class="video-font">ADVANCING SUSTAINABILITY</h6>
+                <h1 class="video-font-1">At the Core of Everything We Do</h1>
+                <h6 class="video-font-2 mt-3">Creating sustainable products and solutions that drive change.</h6>
+                <button class="button-3"><i class="fa-regular fa-circle-play video-icon me-3"></i>Play Video</button>
+
+                <div class="anchor-1">
+                    <a href="" class="text-light ms-5 text-decoration-none">Discover how we're shaping a better future
+                        today<i class="fa-solid fa-arrow-right ps-2 me-5 anchor-3 d-none d-md-block"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card-5 text-light">
+            <h5 class="vinoth">Latest from dell Technologies</h5>
+            <h1 class="h1-whats">What's Happening</h1>
+        </div>
+        <div class="container-fluid card-background">
+            <div class="row">
+                <div class="col">
+                    <section class="section-7">
+                        <div class="card card-6 rounded-1 d-flex" style="width: 340px; height: 410px;">
+                            <img src="./boot-image/section-img" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <p class="card-text-1 text-white">Register early for dell Technologies
+                                    World
+                                    to save $200
+                                    and
+                                    get your free gift!</p>
+                                <div class="d-flex align-items-center d-none d-md-flex fs-3 mb-3">
+                                    <a href="#" class="text-decoration-none text-white fs-6">Register Today</a>
+                                    <i class='bx bx-right-arrow-alt text-white'></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-6 rounded-1 border-0 " style="width: 340px; height: 410px;">
+                            <img src="./boot-image/section-img-2" class="card-img-top-1 img-fluid card-imag-1"
+                                alt="...">
+                            <div class="card-body position-relative">
+                                <h5 class="card-text h5-view  text-white">View Newsroom</h5>
+
+                                <div class="d-flex align-items-center d-none d-md-flex fs-3 img-card-2">
+                                    <a href="#" class="text-decoration-none text-white fs-6">Register Today</a>
+                                    <i class='bx bx-right-arrow-alt text-white'></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-6 rounded-1  border-0" style="width: 340px; height: 410px;">
+                            <img src="./boot-image/section-img-3" class="card-img-top-2 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-text h5-view text-white">Dell technologies Events</h5>
+                               
+                                <div class="d-flex align-items-center d-none d-md-flex fs-3 img-card">
+                                    <a href="#" class="text-decoration-none text-white fs-6">Register Today</a>
+                                    <i class='bx bx-right-arrow-alt text-white'></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-6 rounded-1 border-0" style="width: 340px; height: 410px;">
+                            <img src="./boot-image/section-img-4" class="card-img-top-3 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-text h5-view text-white card-img">Our purpose in Action</h5>
+                            
+                                <div class="d-flex align-items-center d-none d-md-flex fs-3 img-card-1">
+                                    <a href="#" class="text-decoration-none text-white fs-6">Register Today</a>
+                                    <i class='bx bx-right-arrow-alt text-white'></i>
+                                </div>
+                            </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container-fluid section-bottom">
+            <div class="row text-white section-bottom-1">
+                <div class="col-6 reward-section col-6-content">
+                    <h5 class="ms-4 h-8">DELL REWARDS</h5>
+                    <h1 class="h1-buy">Buy More.Get More.</h1>
+                    <h6 class="h1-buy-1">Get rewarded on your purchase for your next buy at Dell.co.in.<br> *Terms and
+                        conditions apply.</h6>
+                    <button class="h1-buy-2 button-10 border-0 btn-primary mt-4 ">Learn more</button>
+                </div>
+                <div class="col-6 side-image">
+                    <img src="./boot-image/pan-dell-woman-on-train-1200x675.avif" alt="" height="430px" width="756px" class="img-3"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <div class="last-content pt-5 text-center">
+            <div class="Based-h5">
+                <h5 class="h-based">Based on my visit today, I would say Dell Technologies is...</h5>
+            </div>
+            <div class="pt-3">
+                <h5 class="last-content d-none d-md-block">Not at all innovative <i
+                        class="fa-regular fa-star icon-final"></i> <i class="fa-regular fa-star icon-final"></i> <i
+                        class="fa-regular fa-star icon-final"></i> <i class="fa-regular fa-star icon-final"></i> <i
+                        class="fa-regular fa-star icon-final"></i> <i class="fa-regular fa-star icon-final"></i> <i
+                        class="fa-regular fa-star icon-final"></i>
+                    Extremely
+                    innovative</h5>
+            </div>
+            <div class="d-none star-final">
+                <i class="fa-regular fa-star icon-final"></i><i class="fa-regular fa-star icon-final"></i><i
+                    class="fa-regular fa-star icon-final"></i><i class="fa-regular fa-star icon-final"></i><i
+                    class="fa-regular fa-star icon-final"></i><i class="fa-regular fa-star icon-final"></i>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-5 footer-1">
+            <div class="row">
+                <div class="col">
+                    <ul class="list-footer">
+                        <li><i class="fa-solid fa-globe"></i>IN/EN</li>
+                        <li>Site map</li>
+                        <h6 class="mt-5">Our offerrings</h6>
+                        <li>Artificial intelligence</li>
+                        <li>Products</li>
+                        <li>Solutions</li>
+                        <li>Services</li>
+                        <li>Deals</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-2">
+                        <h6>Account</h6>
+                        <li>My account</li>
+                        <li>Order status</li>
+                        <li>Profile Settings</li>
+                        <li>My products</li>
+                        <h6 class="mt-5">Our Company</h6>
+                        <li>Who we Are</li>
+                        <li>Careers</li>
+                        <li>Dell Technologies Capital</li>
+                        <li>Investors</li>
+                        <li>Newsroom</li>
+                        <li>Recycling</li>
+                        <li>ESG & impact</li>
+                        <li>Customer Stories</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <ul class="list-3">
+                        <h6>Support</h6>
+                        <li>Support home</li>
+                        <li>Contact technical support</li>
+                        <li>Returns</li>
+                        <h6 class="mt-5">Our partners</h6>
+                        <li>Find a partner</li>
+                        <li>OEM solutions</li>
+                        <li>Partner Program</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <ul class="list-4">
+                        <h6>Connect with us</h6>
+                        <li>Community</li>
+                        <li>Contact us</li>
+                        <h6 class="mt-5">Resources</h6>
+                        <li>Blog</li>
+                        <li>Dell rewards</li>
+                        <li>Events</li>
+                        <li>Email-sign-up</li>
+                        <li>Privacy centre</li>
+                        <li>Security & trust centre</li>
+                        <li>Trial software Downloads</li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
